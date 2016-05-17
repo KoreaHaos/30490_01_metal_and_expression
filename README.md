@@ -1,1 +1,3 @@
 # 30490_01_metal_and_expression
+
+This is the frontyard for Haos' Expression of Metal...
