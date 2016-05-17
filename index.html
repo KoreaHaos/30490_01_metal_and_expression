@@ -1,38 +1,76 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
-	<title>Full Page Background Image</title>
-	
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	
-	<!--[if lt IE 7]>
-    	<script type="text/javascript" src="js/mootools.js"></script>
-    	<script type="text/javascript" src="js/core.js"></script>
-	<![endif]-->
+	<meta charset="utf-8">
+
+	<title>Metal Haos Expressed</title>
+
+	<style>
+		img.bg {
+			/* Set rules to fill background */
+			min-height: 100%;
+			min-width: 1024px;
+			/* Set up proportionate scaling */
+			width: 100%;
+			height: auto;
+			/* Set up positioning */
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		
+		@media screen and (max-width: 1024px) {
+			img.bg {
+				left: 50%;
+				margin-left: -512px;
+			}
+		}
+		
+		#page-wrap {
+			position: relative;
+			width: 400px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.3);
+			-moz-box-shadow: 0 0 20px black;
+			-webkit-box-shadow: 0 0 20px black;
+			box-shadow: 0 0 20px black;
+		}
+		
+		p {
+			font: 15px/2 Georgia, Serif;
+			margin: 0 0 30px 0;
+			text-indent: 40px;
+		}
+		
+		a:link {
+			color: black;
+			text-decoration: none;
+		}
+		
+		a:visited {
+			text-decoration: none;
+		}
+		
+		a:hover {
+			text-decoration: none;
+		}
+		
+		a:active {
+			text-decoration: none;
+		}
+	</style>
 </head>
 
 <body>
 
-    <div id="cont">
-        
-        <div class="box"></div>	
-    </div>
-    
-    <div id="bg">
-        <div>
-            <table cellspacing="0" cellpadding="0">
-                <tr>
-                    <td>
-                        <a href="pgs/index.html"><img src="img/lander_image.jpg" alt=""/></a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-	
+	<img src="img/lander_image.jpg" class="bg">
+	<div id="page-wrap">
+
+		<a href="pgs/index.html"><h1>Hello World!</h1></a>
+	</div>
+
 </body>
 
 </html>
